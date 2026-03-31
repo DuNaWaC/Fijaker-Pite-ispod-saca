@@ -1,0 +1,52 @@
+<svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg" width="400" height="320">
+
+  <!-- Background -->
+  <rect width="400" height="320" fill="#FAFAF7"/>
+
+  <!-- Top decorative line -->
+  <line x1="40" y1="48" x2="360" y2="48" stroke="#1A1A1A" stroke-width="1.5"/>
+
+  <!-- ===== SAČ (bell-shaped lid) ===== -->
+  <!-- Sač dome -->
+  <path d="M130 210 Q130 140 200 128 Q270 140 270 210 Z" fill="#1A1A1A"/>
+  <!-- Sač rim / base plate -->
+  <rect x="118" y="208" width="164" height="10" rx="2" fill="#1A1A1A"/>
+  <!-- Sač handle knob on top -->
+  <ellipse cx="200" cy="128" rx="10" ry="6" fill="#1A1A1A"/>
+  <rect x="196" y="118" width="8" height="12" rx="3" fill="#1A1A1A"/>
+  <ellipse cx="200" cy="118" rx="7" ry="5" fill="#1A1A1A"/>
+
+  <!-- Pita peeking out from under sač — wavy crust edge -->
+  <path d="M114 212 Q124 204 134 212 Q144 220 154 212 Q164 204 174 212 Q184 220 194 212 Q204 204 214 212 Q224 220 234 212 Q244 204 254 212 Q264 220 274 212 Q282 206 286 212"
+        fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Pita bottom layer -->
+  <rect x="110" y="212" width="180" height="12" rx="3" fill="#1A1A1A" opacity="0.15"/>
+  <rect x="110" y="218" width="180" height="6" rx="2" fill="#1A1A1A" opacity="0.5"/>
+
+  <!-- Embers / žar dots under sač -->
+  <ellipse cx="160" cy="236" rx="6" ry="3" fill="#1A1A1A" opacity="0.18"/>
+  <ellipse cx="200" cy="238" rx="8" ry="3" fill="#1A1A1A" opacity="0.18"/>
+  <ellipse cx="240" cy="236" rx="6" ry="3" fill="#1A1A1A" opacity="0.18"/>
+  <ellipse cx="180" cy="240" rx="5" ry="2.5" fill="#1A1A1A" opacity="0.12"/>
+  <ellipse cx="220" cy="240" rx="5" ry="2.5" fill="#1A1A1A" opacity="0.12"/>
+
+  <!-- Steam wisps from top -->
+  <path d="M188 114 Q184 104 188 94 Q192 84 188 74" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" opacity="0.35"/>
+  <path d="M200 112 Q196 100 200 88 Q204 76 200 64" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" opacity="0.45"/>
+  <path d="M212 114 Q216 104 212 94 Q208 84 212 74" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- ===== TEXT ===== -->
+  <!-- FIJAKER -->
+  <text x="200" y="90" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700" fill="#1A1A1A" text-anchor="middle" letter-spacing="8">FIJAKER</text>
+
+  <!-- PITE -->
+  <text x="200" y="278" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="400" fill="#1A1A1A" text-anchor="middle" letter-spacing="12">PITE</text>
+
+  <!-- Ornaments beside PITE -->
+  <text x="112" y="278" font-family="serif" font-size="16" fill="#1A1A1A" text-anchor="middle">✦</text>
+  <text x="288" y="278" font-family="serif" font-size="16" fill="#1A1A1A" text-anchor="middle">✦</text>
+
+  <!-- Bottom decorative line -->
+  <line x1="40" y1="293" x2="360" y2="293" stroke="#1A1A1A" stroke-width="1.5"/>
+
+</svg>

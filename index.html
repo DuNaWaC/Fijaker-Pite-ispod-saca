@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Fijaker Pite ispod saca"</title>
+    <!--logo-->
+    <link rel="icon" type="image/svg" href="logo.svg" sizes="30x30">
+    <!--Fontovi-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<!--Bebas-->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<!--Page2 o nama-->
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+</head>
+<style>
+
+    /*Pozadina*/
+
+    body {
+
+        background-color: #f0f0f0;
+
+    }
+
+
+    /*Naslov*/
+
+    .Naslov {
+
+        color: orange;
+        font-size: 120px;
+        font-family: 'Pacifico', cursive;
+        font-weight: 400;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 14px;
+        line-height: 150px;
+        position: absolute;
+        left: 120px;
+        top: 120px;
+
+    }
+
+    /*Dim*/
+
+    .dim {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 300px;
+    height: 500px;
+    z-index: 2;
+    transform: rotate(-6deg)
+
+}
+    /*Pocetni-banner*/
+
+    .banner {
+
+        background: linear-gradient(-45deg, rgb(98, 9, 9), rgb(46, 14, 14));
+        padding: 0px;
+        width: 100vw;
+        height: 1000px;
+        margin: 0;
+        position: relative;
+        top: -20px;
+        left: -9px;
+        z-index: 1;
+        
+
+    
+    }
+
+     /*poklopac*/
+
+    .poklopac{
+
+         position: absolute;
+         top: 5px;
+         left: 279px;
+         transform: rotate(7deg);
+         z-index: 10;
+
+    }
+
+    /*Sac*/
+
+    .sac {
+
+        position: absolute;
+        top: 650px;
+        left: 190px;
+        z-index: 10;
+
+    }
+
+    /*kutija*/
+
+.box{
+    border-radius: 15px;
+    background-color: #271036;
+    padding: 50px;
+    position: absolute;
+    top: 120px;
+    left: 900px;
+    width: 200px;
+    height: 45px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+      .box:hover {
+
+        transform: translateY(-6px) scale(1.03);
+        background-color: #3b1a52;
+         box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(150, 60, 255, 0.4);
+
+      }
+
+    .text {
+
+        position: absolute;
+        top: 25px;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #ffcc70;
+        font-size: 30px;
+        flex-direction: column;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    /*Kutija 2*/
+
+    .box2 {
+    border-radius: 15px;
+    background-color: #271036;
+    padding: 50px;
+    position: absolute;
+    top: 450px;
+    left: 990px;
+    width: 200px;
+    height: 45px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    z-index: 400000;
+}
+
+      .box2:hover {
+
+        transform: translateY(-6px) scale(1.03);
+        background-color: #3b1a52;
+         box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(150, 60, 255, 0.4);
+
+      }
+
+
+          .text2 {
+
+        position: absolute;
+        top: 15px;
+        left:80px;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #ffcc70;
+        font-size: 30px;
+
+          }
+    
+    /*Kutija3*/
+
+    .box3 {
+    border-radius: 15px;
+    background-color: #271036;
+    padding: 50px;
+    position: absolute;
+    top: 740px;
+    left: 890px;
+    width: 200px;
+    height: 45px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    z-index: 2;
+}
+
+      .box3:hover {
+
+        transform: translateY(-6px) scale(1.03);
+        background-color: #3b1a52;
+         box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(150, 60, 255, 0.4);
+
+      }
+
+          .text3 {
+
+        position: absolute;
+        top: 15px;
+        left:80px;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #ffcc70;
+        font-size: 30px;
+
+          }
+
+          /*box na 2str*/
+          .boxp2{
+
+          border-radius: 9px;
+          background-color: rgb(217, 208, 181);
+          padding: 250px;
+          position: absolute;
+          top: 1100px;
+          left: 170px;
+          box-shadow: 0 8px 50px black;
+          width: 25px;
+          height: 60px;
+
+          }
+
+          .textic{
+
+            font-family: 'Amatic SC', cursive;
+            font-size: 40px;
+            position: absolute;
+            top: 1px;
+            left: 225px;
+
+          }
+
+          .tabutema{
+            font-size: 20px;
+            position: absolute;
+            left: -180px
+          }
+
+          .tabutemet {
+            font-size: 20px;
+            position: absolute;
+            top: 280px;
+            left: -180px;
+          }
+
+          .tabutem {
+            font-size: 20px;
+            position: absolute;
+            top: 400px;
+            left: -180px;
+          }
+
+          .box5{
+            border-radius: 9px;
+            background-color:rgb(211, 175, 175);
+            padding: 90px;
+            width: 60px;
+            box-shadow: 0 1px 20px black;
+            position: absolute;
+            left: 900px;
+            top: 1165px;
+          }
+
+          .amnezija{
+            position: absolute;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 70px;
+            left: 30px;
+            top: -50px;
+          }
+
+          .zvezdica{
+            position: absolute;
+            top: 60px;
+            left: 140px;
+          }
+
+          .texticic{
+            font-family: 'Montserrat', sans-serif;
+            position: absolute;
+            left: 10px;
+            top: 100px;
+          }
+
+          .retardinjo{
+              font-family: 'Montserrat', sans-serif;
+            position: absolute;
+            left: 10px;
+            top: 140px;
+            color: rgb(12, 76, 154);
+          }
+
+          .retardinjo:hover{
+            transform: translateY(-1px) scale(1);
+            text-shadow: 0 8px 50px black;
+          }
+          iframe{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 1400px;
+            left: 900px;
+            border-radius: 15px;
+            box-shadow: 0 0px 100px black;
+          }
+
+
+
+          .banner3{
+              background-color: #ffedd6;
+              padding: 0px;
+              width: 100vw;
+              height: 100vw;
+              margin: 0;
+              position: relative;
+              top: 900px;
+              z-index: 1;
+
+          }
+
+          video{
+            position: absolute;
+            top: 800px;
+            left: 400px;
+            border-radius: 20px;
+            width: 600px;
+            height: 600px;
+          }
+
+          .box6{
+            border-radius: 9px;
+            background-color: rgb(175, 207, 229);
+            padding: 20px;
+            position: absolute;
+            top: 190px;
+            left: 900px;
+            box-shadow: 0 8px 50px black;
+            width: 300px;
+            height: 400px;
+          }
+
+          .vrijeme{
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            top: -19px;
+            left: 10px;
+            font-size: 20px;
+
+          }
+
+/* Sama kartica */
+.pita-card {
+  background: var(--cream);
+  padding: 2.5rem 1.8rem;
+  position: relative; overflow: hidden;
+  transition: background 0.3s;
+  cursor: default;
+  z-index: 10;
+  top: -400px;
+  left: 20px;
+}
+
+
+.pita-card:hover::after { transform: scaleX(1); }
+
+/* Emoji */
+.pita-emoji { font-size: 2.2rem; display: block; margin-bottom: 1.2rem; }
+
+/* Naziv pite */
+.pita-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 39px; font-weight: 700; color: var(--rust-dk);
+  margin-bottom: 0.5rem;
+}
+
+/* Opis */
+.pita-desc { font-size: 20px; color: var(--muted); font-weight: 300; line-height: 1.7; }
+
+/* Tagić (Specijalitet, Domaći recept...) */
+.pita-tag {
+  display: inline-block; margin-top: 1rem;
+  font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+  background: rgba(139,46,15,0.08);
+  color: var(--rust); padding: 3px 10px;
+}
+
+.rodoljub{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  position: absolute;
+  top: 650px;
+  left: 450px;
+}
+
+
+/*RESONZIVNOST*/
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ===== HERO / NASLOV ===== */
+    .banner {
+        height: auto;
+        padding: 40px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Naslov {
+        position: static;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 5px;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    /* Sakrij dekoracije */
+    .poklopac,
+    .sac,
+    .dim {
+        display: none;
+    }
+
+    /* ===== BOXOVI (TOP SEKCIJA) ===== */
+    .box, .box2, .box3 {
+        position: static;
+        width: 90%;
+        max-width: 400px;
+        margin: 15px auto;
+        padding: 25px;
+    }
+
+.text, .text2, .text3 {
+    position: static !important;
+    text-align: center;
+    font-size: 20px;
+    
+    /* KLJUČNO */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+    /* ===== O NAMA ===== */
+    .boxp2 {
+        position: static;
+        width: 90%;
+        margin: 50px auto;
+        padding: 25px;
+        height: auto;
+    }
+
+    .textic {
+        position: static;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .tabutema,
+    .tabutemet,
+    .tabutem {
+        position: relative;
+        font-size: 16px;
+        margin: 10px 0;
+        line-height: 1.6;
+        position: static !important;
+        top: 200px;
+    }
+
+    /* ===== OCENA ===== */
+    .box5 {
+        position: static;
+        width: 80%;
+        margin: 30px auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* ===== MAPA ===== */
+    iframe {
+        position: static;
+        width: 90%;
+        height: 250px;
+        margin: 30px auto;
+        display: block;
+    }
+
+    /* ===== DRUGI DEO ===== */
+    .banner3 {
+        position: relative;
+        top: 0;
+        padding: 40px 15px;
+        height: auto;
+    }
+
+    .rodoljub {
+        position: static;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    /* ===== VIDEO ===== */
+    video {
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+
+    /* ===== RADNO VREME ===== */
+    .box6 {
+        position: static;
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+        height: auto;
+    }
+
+    /* ===== PITE (NAJBITNIJE) ===== */
+    .pita-card {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+        top: 0;
+    }
+
+    /* GLOBALNI SPACING */
+    section, div {
+        box-sizing: border-box;
+    }
+
+    /* ===== OCENA MUSTERIJA ===== */
+.box5 {
+    position: static;
+    width: 220px;
+    margin: 40px auto; /* centrirano */
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+/* broj 4.8 */
+.amnezija {
+    position: static;
+    font-size: 50px;
+    margin: 0;
+}
+
+/* zvezdica */
+.zvezdica {
+    position: static;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* tekst */
+.texticic {
+    position: static;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* link */
+.retardinjo {
+    position: static;
+    display: inline-block;
+    margin-top: 5px;
+}
+}
+
+</style>
+<body>
+
+        <div class="dim">
+<svg viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- linija 1 -->
+  <path d="M50 400 C 20 300, 80 200, 50 100 C 20 50, 60 0, 50 -50"
+        stroke="rgba(200,200,200,0.5)" stroke-width="8" fill="none"/>
+
+  <!-- linija 2 -->
+  <path d="M100 400 C 70 300, 130 200, 100 100 C 70 50, 110 0, 100 -50"
+        stroke="rgba(200,200,200,0.4)" stroke-width="8" fill="none"/>
+
+  <!-- linija 3 -->
+  <path d="M150 400 C 120 300, 180 200, 150 100 C 120 50, 160 0, 150 -50"
+        stroke="rgba(200,200,200,0.4)" stroke-width="8" fill="none"/>
+</svg>
+</div>
+
+   <div class="poklopac">
+    <img src="klopokac.png" width="300" height="200">
+</div>
+
+<div class="sac">
+    <img src="sac.png" width="300" height="200">
+</div>
+
+    <!--Banner-->
+<div class="banner">
+
+
+    <b><!--NOVA STRANICA--></b>
+
+
+    <!--Naslov-2-->
+    <div class="Naslov">
+        <span>"Fijaker</span>
+        <span>pite</span>
+        <span>ispod</span>
+        <span>saca"</span>
+    </div>
+</div>
+
+<div class="box">
+    <p class="text">Naj izvrsnije pite</p>
+</div>
+<div class="box2">
+<p class="text2">Pravljeno sa ljubavlju</p>
+</div>
+<div class="box3">
+    <p class="text3">Meso najviseg kvaliteta</p>
+</div>
+<div class="boxp2">
+    <div class="textic">
+        <p>o nama</p>
+        <p class="tabutema", style="font-family: 'Montserrat', sans-serif;">-Mi smo pekara iz Kaca mesto u blizini Novog Sada nalazimo se na lokaciji Svetosavska 86 u Kacu.</p>
+        <p class="tabutemet", style="font-family: 'Montserrat', sans-serif;">-Nudimo veliki izbor pita i pića, koje su uvek sveze i cekaju samo vas.</p>
+        <p class="tabutem", style="font-family: 'Montserrat', sans-serif;">-Nase pite nisu samo obicne pite nase pite su direktni portali za 7. nebo.</p>
+    </div>
+</div>
+
+<div class="box5">
+    <p class="amnezija">4,8</p>
+    <p class="zvezdica">⭐</p>
+    <p class="texticic">OCENA MUSTERIJA NA</p> <a class="retardinjo" href="https://www.google.com/maps/place/Fijaker+Pite/@45.3042576,19.9265348,684m/data=!3m2!1e3!4b1!4m6!3m5!1s0x475b19ee84bcfb7b:0x5feee6b1f77d48da!8m2!3d45.3042576!4d19.9265348!16s%2Fg%2F11f2wfm134?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D">Google-u</a>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17228.409846486997!2d19.93878870350471!3d45.304241352921096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b19ee84bcfb7b%3A0x5feee6b1f77d48da!2sFijaker%20Pite!5e1!3m2!1ssr!2srs!4v1774905371076!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="banner3">
+  <p class="rodoljub">Priprema nasih pita</p>
+    <video class="video" controls>
+    <source src="pecarazuladin.mp4" type="video/mp4">
+</video>
+  <!--Radno vreme-->
+<div class="box6">
+    <div class="vrijeme">
+<p>RADNO VREME</p>
+<li>Ponedeljak-06h-16h</li>
+<li>-Utorak-06h-16h</li>
+<li>-Sreda-06h-16h</li>
+<li>-Cetvrtak-06h-16h</li>
+<li>-Petak-06h-16h</li>
+<li >-Subota-06h-14h</li>
+<li><b><i>NEDELJOM NE RADIMO</i></b></li>
+</div>
+</div>
+</div>
+<!--mesoo-->
+<div class="pita-card">
+  <span class="pita-emoji">🥩</span>
+  <div class="pita-name">Mesna pita</div>
+  <p class="pita-desc">Sočno mleveno meso sa začinima, umotano u svilenkasto testo — pravi vojvođanski zalogaj.</p>
+  <span class="pita-tag">Specijalitet</span>
+</div>
+<!--Krompirusa-->
+<div class="pita-card">
+  <span class="pita-emoji">🥔</span>
+  <div class="pita-name">Krompiruša</div>
+  <p class="pita-desc">Kremasti krompir sa lukom i začinima — skromna sirovina, neprocenjiv ukus.</p>
+  <span class="pita-tag">Domaći recept</span>
+</div>
+</body>
+</html>
